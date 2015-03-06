@@ -42,3 +42,19 @@ ruby recipi.rb recipi-data.txt
 
 理由：
 汎用的な表現も追加し、他のファイルを参照する場合の変更にも分かりやすくなるように気をつけた。
+
+## 変数名の変更
+
+URL: https://github.com/yukokondo/yukokondo-readable-code/commit/9261fc6ca852bf4227382ad45176b0286d9b33e2
+
+```
+recipi_data = open(ARGV[0]).read
+recipi_name = JSON.parse(recipi_data)
+```
+→
+```
+recipi_json = open(ARGV[0]).read
+recipi_name = JSON.parse(recipi_json)
+```
+
+理由：recipi_◯◯が続いてよくわからないのと、recipi_dataってなんやねん（全部データ）と思ったので、具体的なものに変更。
