@@ -48,14 +48,15 @@ ruby recipi.rb recipi-data.txt
 
 URL: https://github.com/yukokondo/yukokondo-readable-code/commit/9261fc6ca852bf4227382ad45176b0286d9b33e2
 
+```
 recipi_data = open(ARGV[0]).read
 recipi_name = JSON.parse(recipi_data)
-
+```
 →
-
+```
 recipi_json = open(ARGV[0]).read
 recipi_name = JSON.parse(recipi_json)
-
+```
 理由：recipi_◯◯が続いてよくわからないのと、recipi_dataってなんやねん（全部データ）と思ったので、具体的なものに変更。
 
 
@@ -96,10 +97,11 @@ $ /path/to/ruby recipe.rb recipe-data.txt
 URL: https://github.com/yukokondo/myokoym-readable-code-workshop-ruby/commit/9cc9095a786241ba0e669ea340c167edcace239a
 
 コード：
+```
 data_path = ARGV[0]
 
 puts File.read(data_path)
-
+```
 理由：仕様1と、連続性のある拡張をしている。一行あけているのもいい。
 
 
@@ -108,6 +110,7 @@ puts File.read(data_path)
 URL: https://github.com/yukokondo/myokoym-readable-code-workshop-ruby/commit/922ea8e6cf43019fe43e6c892ad3ddd4c2bba2f4
 
 コード：
+```
 def read_lines(data_path)
   recipes = []
   File.open(data_path, "r") do |file|
@@ -117,7 +120,7 @@ def read_lines(data_path)
   end
   recipes
 end
-
+```
 理由：データの読み込みをメソッドで定義しているので、拡張するときによさそう。メソッド名も何をするのかがわかりやすい。
 
 ## データの入れ方によって、単数形と複数形を分けている
@@ -125,8 +128,10 @@ end
 URL: https://github.com/yukokondo/myokoym-readable-code-workshop-ruby/commit/922ea8e6cf43019fe43e6c892ad3ddd4c2bba2f4
 
 コード：
+```
 recipes.each do |recipe|
   puts recipe
 end
+```
 
 理由：recipesとrecipeは、単純に、単数形／複数形としているだけで、クラスも違うけれど、それだけでデータがどのように入っているかイメージしやすくていい。
