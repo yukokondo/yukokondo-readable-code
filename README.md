@@ -8,8 +8,8 @@ Atom
 
 ## データファイル
 
-* ファイル名： recipi-data.json
-* フォーマット：JSON
+* ファイル名： recipi-data.txt
+* フォーマット：テキスト
 
 ## 実行手順
 
@@ -20,5 +20,5 @@ ruby recipe.rb [データファイル名]
 
 今回の仕様の例だと下記の通り。
 ```
-ruby recipe.rb recipe-data.json
+ruby recipe.rb recipe-data.txt
 ```
