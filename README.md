@@ -15,10 +15,10 @@ Atom
 
 ファイルのあるディレクトリに移動し、コンソールで以下を入力する。
 ```
-ruby recipi.rb [データファイル名]
+ruby recipe.rb [データファイル名]
 ```
 
 今回の仕様の例だと下記の通り。
 ```
-ruby recipi.rb recipi-data.json
+ruby recipe.rb recipe-data.json
 ```
