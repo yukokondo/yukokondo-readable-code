@@ -18,7 +18,7 @@ Atom
 ruby recipi.rb [データファイル名]
 ```
 
-今回の、仕様3の例だと下記の通り。
+今回の仕様の例だと下記の通り。
 ```
 ruby recipi.rb recipi-data.txt
 ```
